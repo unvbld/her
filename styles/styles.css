@@ -72,7 +72,256 @@ button:hover {
 
 /* Add your CSS styles here */
 .hidden {
+    display: block; /* Set to "block" to make the elements visible */
+}
+
+/* Style for Move On message */
+#moveOnMessage {
+    font-size: 36px;
+    font-weight: bold;
     display: none;
+}
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'ClashGrotesk Sans Serif', sans-serif; /* Apply the desired font */
+}
+
+/* Full-page video background */
+#backgroundVideo {
+    width: 100%;
+    height: 100vh; /* Gunakan tinggi viewport untuk mengisi seluruh tinggi layar */
+    object-fit: cover; /* Mengisi video sesuai dengan lebar dan tinggi layar */
+    z-index: -1;
+}
+
+/* Center content within the container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center content horizontally and vertically */
+.content {
+    text-align: center;
+    padding: 0; /* Remove padding */
+    border-radius: 10px;
+    color: #DDE6ED;
+}
+
+/* Your button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #526D82;
+    border: none;
+    color: #DDE6ED;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+    transition: filter 0.3s ease; /* Add transition for the blur effect */
+}
+
+button:hover {
+    background-color: #9DB2BF;
+}
+
+/* Loading container */
+.loading-container {
+    width: 100%;
+    background-color: #DDE6ED;
+    height: 20px;
+    display: none; /* Initially hide the loading container */
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Loading bar */
+#loadingBar {
+    width: 0;
+    height: 100%;
+    background-color: #526D82;
+    transition: width 1s ease-in-out;
+}
+
+/* Add your CSS styles here */
+.hidden {
+    display: block; /* Set to "block" to make the elements visible */
+}
+
+/* Style for Move On message */
+#moveOnMessage {
+    font-size: 36px;
+    font-weight: bold;
+    display: none;
+}
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'ClashGrotesk Sans Serif', sans-serif; /* Apply the desired font */
+}
+
+/* Full-page video background */
+#backgroundVideo {
+    width: 100%;
+    height: 100vh; /* Gunakan tinggi viewport untuk mengisi seluruh tinggi layar */
+    object-fit: cover; /* Mengisi video sesuai dengan lebar dan tinggi layar */
+    z-index: -1;
+}
+
+/* Center content within the container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center content horizontally and vertically */
+.content {
+    text-align: center;
+    padding: 0; /* Remove padding */
+    border-radius: 10px;
+    color: #DDE6ED;
+}
+
+/* Your button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #526D82;
+    border: none;
+    color: #DDE6ED;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+    transition: filter 0.3s ease; /* Add transition for the blur effect */
+}
+
+button:hover {
+    background-color: #9DB2BF;
+}
+
+/* Loading container */
+.loading-container {
+    width: 100%;
+    background-color: #DDE6ED;
+    height: 20px;
+    display: none; /* Initially hide the loading container */
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Loading bar */
+#loadingBar {
+    width: 0;
+    height: 100%;
+    background-color: #526D82;
+    transition: width 1s ease-in-out;
+}
+
+/* Add your CSS styles here */
+.hidden {
+    display: block; /* Set to "block" to make the elements visible */
+}
+
+/* Style for Move On message */
+#moveOnMessage {
+    font-size: 36px;
+    font-weight: bold;
+    display: none;
+}
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'ClashGrotesk Sans Serif', sans-serif; /* Apply the desired font */
+}
+
+/* Full-page video background */
+#backgroundVideo {
+    width: 100%;
+    height: 100vh; /* Gunakan tinggi viewport untuk mengisi seluruh tinggi layar */
+    object-fit: cover; /* Mengisi video sesuai dengan lebar dan tinggi layar */
+    z-index: -1;
+}
+
+/* Center content within the container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center content horizontally and vertically */
+.content {
+    text-align: center;
+    padding: 0; /* Remove padding */
+    border-radius: 10px;
+    color: #DDE6ED;
+}
+
+/* Your button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #526D82;
+    border: none;
+    color: #DDE6ED;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+    transition: filter 0.3s ease; /* Add transition for the blur effect */
+}
+
+button:hover {
+    background-color: #9DB2BF;
+}
+
+/* Loading container */
+.loading-container {
+    width: 100%;
+    background-color: #DDE6ED;
+    height: 20px;
+    display: none; /* Initially hide the loading container */
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Loading bar */
+#loadingBar {
+    width: 0;
+    height: 100%;
+    background-color: #526D82;
+    transition: width 1s ease-in-out;
+}
+
+/* Add your CSS styles here */
+.hidden {
+    display: block; /* Set to "block" to make the elements visible */
 }
 
 /* Style for Move On message */
