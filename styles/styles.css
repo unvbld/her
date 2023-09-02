@@ -74,3 +74,10 @@ button:hover {
 .hidden {
     display: none;
 }
+
+/* Style for Move On message */
+#moveOnMessage {
+    font-size: 36px;
+    font-weight: bold;
+    display: none;
+}
