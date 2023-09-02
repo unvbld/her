@@ -8,26 +8,26 @@ html, body {
 }
 
 /* Full-page video background */
-#backgroundVideo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
-
-/* Center content within the container */
-.container {
+#videoContainer {
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-/* Center content horizontally and vertically */
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Buat video responsif dengan lebar 100% */
+    height: auto; /* Biarkan tinggi mengikuti aspek rasio video */
+    z-index: -1;
+}
+
+/* Center content within the container */
 .content {
     text-align: center;
     padding: 0; /* Remove padding */
@@ -79,9 +79,5 @@ button:hover {
 
 /* Blur effect for the background when the button is pressed */
 .blur {
-    filter: blur(5px); /* Adjust the blur amount as needed */
-}
-
-#videoContainer.blur {
     filter: blur(5px); /* Adjust the blur amount as needed */
 }
