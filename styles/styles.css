@@ -4,7 +4,7 @@ html, body {
     padding: 0;
     height: 100%;
     overflow: hidden;
-    font-family: 'ClashGrotesk Sans Serif', sans-serif; /* Apply the desired font */
+    font-family: 'ClashGrotesk Sans Serif', sans-serif;
 }
 
 /* Full-page video background */
@@ -26,6 +26,19 @@ html, body {
     align-items: center;
 }
 
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px;
+}
+
+p{
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px;
+}
+
 /* Center content horizontally and vertically */
 .content {
     text-align: center;
@@ -38,24 +51,29 @@ html, body {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #2A2438;
     border: 6px;
     color: #DBD8E3;
     cursor: pointer;
     margin: 5px;
     border-radius: 5px;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
-    transition: filter 0.3s ease; /* Add transition for the blur effect */
+    box-shadow: 0px 6px 6px rgba(255, 255, 255, 0.4);
+    transition: filter 1s ease; /* Add transition for the blur effect */
+    background-color: transparent;
+    border: 2px solid #e7e7e7;
+    font-family: 'ClashGrotesk Sans Serif', sans-serif;
 }
 
+
 button:hover {
-    background-color: #352F44;
+    background-color: #e7e7e7;
+    color: black;
 }
 
 /* Loading container */
 .loading-container {
     width: 100%;
-    background-color: #DBD8E3;
+    border: 2px solid #e7e7e7;
+    background-color: transparent;
     height: 20px;
     display: none; /* Initially hide the loading container */
     margin: 10px 0;
@@ -67,18 +85,12 @@ button:hover {
 #loadingBar {
     width: 0;
     height: 100%;
-    background-color: #2A2438;
+    background-color: #DBD8E3;
     transition: width 1s ease-in-out;
 }
 
-/* Add your CSS styles here */
 .hidden {
     display: none;
-}
-
-/* Blur effect for the background when the button is pressed */
-.blur {
-    filter: blur(5px); /* Adjust the blur amount as needed */
 }
 
 #videoContainer.blur {
